@@ -74,7 +74,7 @@ app.patch('/api/products/', (req, res) => {
   })
 })
 
-app.use(express.static(path.join(__dirname, '/../../adidas-product/client/dist/')));
+app.use(express.static(path.join(__dirname, '/../../../adidas-product/client/dist/')));
 app.listen(port, () => {
   console.log('listening on port: ', port);
 })

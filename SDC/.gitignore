@@ -1,0 +1,12 @@
+# personal stuff
+db.config.js
+# too big to share
+node_modules
+Data/
+dump.sql
+# not worth sharing
+3graph.html
+graph.html
+inserts.html
+../graph.html
+../inserts.html

@@ -1,0 +1,18 @@
+keyspace: adidas
+table: products
+columnspec:
+  - name: product_id
+    population: exp(1..99999)
+queries:
+  products:
+    cql: select * from products where product_id = ?
+    fields: samerow
+  colors:
+    cql: select * from colors where product_id = ?
+    fields: samerow
+  inventory:
+    cql: select * from inventory where product_id = ?
+    fields: samerow
+
+
+    # run cassandra-stress user profile=./SDC/benchmark.yaml duration=1m "ops(events=1)" no-warmup - rate threads=1

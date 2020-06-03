@@ -2,7 +2,7 @@ require('newrelic');
 const cassandra = require('cassandra-driver');
 
 const client = new cassandra.Client({
-  contactPoints: ['127.0.0.1'],
+  contactPoints: ['172.31.28.165'],
   localDataCenter: 'datacenter1',
   keyspace: 'adidas'
 })
